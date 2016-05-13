@@ -7,7 +7,7 @@
             - Add a property named `contents` and set it to be an empty array.
  */
 var plainBox = {};
-plainBox.color = red;
+plainBox.color = "red";
 plainBox.size = 5;
 plainBox.contents = [];
 
@@ -25,7 +25,7 @@ plainBox.contents = [];
             - add a key named `driver` and set it to be `null`.
             - add a key named `passengers` and set it to be an empty array.
  */
-
+var stockCar = {model: "Ford", year: 2002 , automaticTransmission: true, driver: null, passengers: []};
 
 /*
     Add new property inside a function
@@ -40,7 +40,15 @@ plainBox.contents = [];
 
         Finally, invoke your new function while passing in the `plainPerson` object and additional agrument values, then store the return value in a variable named `completePerson`. Use `console.log` three times to print the entire object, just the value at `name`, and just the value at `age`.
  */
+var plainPerson = {};
+function buildPerson(person, nameString, Age) {
+person.name = nameString;
+person.age = Age;
+return person;
+}
 
+buildPerson(plainPerson, "Michael", 20);
+var completePerson = buildPerson(plainPerson, "Michael", 20);
 
 /*
     # Display values of objects that are inside an array
